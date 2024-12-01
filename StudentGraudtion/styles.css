@@ -1,0 +1,280 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #192251; /* Dark blue background */
+    color: #ffffff; /* White text */
+    padding: 20px;
+}
+
+/* Header style */
+header {
+    background-color: #253270;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+}
+
+/* Main container */
+main {
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 25px;
+    background: #253270;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Section styles */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #c7d2f7;
+    text-transform: uppercase;
+    border-bottom: 2px solid #5068a9;
+    padding-bottom: 10px;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: #1f2a4a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    font-weight: bold;
+    color: #c7d2f7;
+}
+
+form input, form select, form button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input, form select {
+    background-color: #ffffff;
+    color: #192251;
+    border: 1px solid #5068a9;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form select:focus {
+    outline: none;
+    border-color: #c7d2f7;
+    box-shadow: 0 0 8px rgba(199, 210, 247, 0.7);
+}
+
+form button {
+    background-color: #5068a9;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+form button:hover {
+    background-color: #c7d2f7;
+    color: #192251;
+    transform: scale(1.05);
+}
+
+/* Filter buttons */
+#filter-section button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #5c7ae5;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+#filter-section button:hover {
+    background-color: #c7d2f7;
+    color: #192251;
+    transform: scale(1.05);
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+    background-color: #1f2a4a;
+    color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+table thead {
+    background-color: #5068a9;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+table th, table td {
+    border: 1px solid #384466;
+    text-align: center;
+    padding: 15px;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #253270;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #1f2a4a;
+}
+
+table tbody tr:hover {
+    background-color: #5068a9;
+}
+
+/* Delete button styles */
+table td button {
+    background-color: #b04d3f;
+    color: #ffffff;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+table td button:hover {
+    background-color: #e57373;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
+/* Overall body style */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #192251; /* Dark blue background */
+    color: #ffffff; /* White text */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Section Headers */
+section {
+    background-color: #253270;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 1.8rem;
+    border-bottom: 1px solid #5068a9; /* Lighter blue for a subtle separator */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+    background-color: #5068a9; /* Light blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c7d2f7; /* Lighter blue on hover */
+}
+
+/* Table styles for consistency */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1f2a4a; 
+    margin-top: 20px; /* Spacing from the buttons or any content above */
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #384466; /* Subtle borders for cells */
+    text-align: left;
+}
+
+thead {
+    background-color: #5068a9; /* Lighter blue for header */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #253270; /* Rows will have the same color as the section for consistency */
+}
+
+tbody tr:hover {
+    background-color: #314d8b; /* A different shade when hovering over rows */
+}
+
+/* Additional styles for vertical spacing and alignment */
+.filter-buttons, .lecture-details {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.filter-buttons button, .lecture-details button {
+    margin-bottom: 10px; /* Space between buttons if wrapped */
+}
+
+.lecture-details {
+    margin-top: 20px; /* Space above the lecture details if needed */
+}
